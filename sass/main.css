@@ -61,7 +61,11 @@ body {
   background-color: #1c1e21;
 }
 
-.principal {
+.d-none {
+  display: none;
+}
+
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,7 +127,7 @@ body {
 }
 
 .ratingState .buttonNumbers .buttonChoice {
-  background-color: #7c8798;
+  background-color: #2f3741;
   opacity: 0.5;
   color: white;
   border-radius: 50%;
@@ -136,27 +140,19 @@ body {
 }
 
 .ratingState .buttonNumbers .buttonChoice:hover {
-  background-color: #fb7413;
+  background-color: #959eac;
   color: white;
   opacity: 1;
 }
 
-.ratingState .buttonNumbers .buttonChoice2 {
-  background-color: #959eac;
-  opacity: 0.5;
+.ratingState .buttonNumbers .buttonChoice.selected {
+  background: #fb7413;
+  opacity: 1;
   color: white;
-  border-radius: 50%;
-  border: none;
-  font-size: 1rem;
-  font-weight: 400;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
 }
 
-.ratingState .buttonNumbers .buttonChoice2:hover {
-  background-color: #fb7413;
-  color: white;
+.ratingState .buttonNumbers .buttonChoice.error {
+  background-color: red;
   opacity: 1;
 }
 
@@ -169,7 +165,7 @@ body {
   border: none;
   border-radius: 20px;
   font-weight: 700;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   cursor: pointer;
 }
 
@@ -181,14 +177,11 @@ body {
 }
 
 .thankYou {
-  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
 }
 
 .thankYou img {
@@ -226,5 +219,9 @@ body {
   text-align: center;
   color: #959eac;
   margin: 0 20px 0 20px;
+}
+
+.thankYou .selection-msg {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

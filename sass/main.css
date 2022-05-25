@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Colors */
+/* Layout */
+/* Typography */
+/*
+### Font
+- Family: [Overpass](https://fonts.google.com/specimen/Overpass)
+
+*/
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+body {
+  background-color: #1c1e21;
+}
+
+.principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle at 50% -20%, #252c37, #232933, #212630, #1f232c, #1d2028, #1b1e25, #191b21, #17181e, #14161a, #121317);
+  border-radius: 10%;
+  font-family: 'Overpass', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.ratingState .star {
+  background-color: #2f3741;
+  border-radius: 50%;
+  border: none;
+  width: 40px;
+  height: 40px;
+  margin: 30px 30px 20px 30px;
+}
+
+.ratingState .star img {
+  width: 1em;
+  height: 1em;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.ratingState h1 {
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  margin: 10px 30px 10px 30px;
+}
+
+.ratingState p {
+  color: #959eac;
+  margin: 0px 30px 10px 30px;
+}
+
+.ratingState .buttonNumbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 30px 20px 30px;
+}
+
+.ratingState .buttonNumbers .buttonChoice {
+  background-color: #7c8798;
+  opacity: 0.5;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.ratingState .buttonNumbers .buttonChoice:hover {
+  background-color: #fb7413;
+  color: white;
+  opacity: 1;
+}
+
+.ratingState .buttonNumbers .buttonChoice2 {
+  background-color: #959eac;
+  opacity: 0.5;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.ratingState .buttonNumbers .buttonChoice2:hover {
+  background-color: #fb7413;
+  color: white;
+  opacity: 1;
+}
+
+.ratingState .buttonSubmit {
+  background-color: #fb7413;
+  color: white;
+  width: 80%;
+  height: 40px;
+  margin: 10px 10% 0 10%;
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+.ratingState .buttonSubmit:hover {
+  -webkit-animation: pulse 1s ease 0s infinite normal forwards;
+          animation: pulse 1s ease 0s infinite normal forwards;
+  background-color: white;
+  color: #fb7413;
+}
+
+.thankYou {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.thankYou img {
+  margin: 40px 30px 20px 30px;
+}
+
+.thankYou div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 30px;
+  background-color: #252d37;
+  color: #fb7413;
+  margin: 0 30px 20px 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+}
+
+.thankYou h2 {
+  font-size: 26px;
+  color: white;
+  margin: 0 30px 20px 30px;
+}
+
+.thankYou p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  color: #959eac;
+  margin: 0 20px 0 20px;
+}
+/*# sourceMappingURL=main.css.map */
